@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: azure;
+        }
+
+        .links{
+            display: flex;
+            
+            align-items: center;
+        }
+
+        .links a{
+            margin: 1rem;
+        }
+
+
+        main{
+            padding: 1rem;
+            padding-top: 2rem;
+            background-color: yellow;
+            display: flex;
+        }
+
+        .first, .seacond{
+            background-color: white;
+            margin-left: 1rem;
+            padding: 10px;
+        }
+
+        .first{
+            flex: 2;
+            
+        }
+        
+        .seacond{
+            flex: 1;
+        }
+
+        footer{
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689652.jpg?semt=ais_hybrid&w=740" alt="" width="100xp">
+        <nav class="links">
+            <a href="#">Home</a>
+            <a href="#">Course</a>
+            <a href="#">Loaction</a>
+            <a href="#">About us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="first">
+            <p>Welcome to the lovely university</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima alias voluptas corrupti, velit pariatur a? Perferendis sunt est praesentium excepturi itaque repellat, eius quos voluptate saepe, earum qui molestiae.</p>
+
+        </div>
+        <div class="seacond">
+            <p>Aside</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore deleniti voluptatum. Voluptate vero, quis illum reprehenderit sit porro magnam unde temporibus labore reiciendis, beatae ratione autem rerum dolorem laboriosam!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p>Ph No: +91 98456 56942</p>
+        </div>
+        <div class="social">
+            <a href="instagram.com">instagram</a> |
+            <a href="x.com">X</a>
+        </div>
+    </footer>
+</body>
+</html>
