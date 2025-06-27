@@ -7,10 +7,10 @@
     <title>Document</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+    }
     </style>
 </head>
 
@@ -20,7 +20,7 @@
         for ($k = 1; $k <= $i; $k++)
             echo '&nbsp;';
 
-        for ($j = 5; $j >= $i; $j--)
+        for ($j = $i; $j <= 5; $j++)
             echo $j;
 
         echo '<br/>';
