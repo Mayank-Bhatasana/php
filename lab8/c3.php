@@ -20,7 +20,7 @@
         for ($k = 1; $k <= $i; $k++)
             echo '&nbsp;';
 
-        for ($j = 1; $j <= 6 - $i; $j++)
+        for ($j = 5; $j >= $i; $j--)
             echo $j;
 
         echo '<br/>';
