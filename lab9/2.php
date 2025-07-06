@@ -105,17 +105,31 @@
                                 'Age' => 18,
                                 'Course' => 'BCA'
                             );
+
+                            // Using var_dump to display the array structure
+                            echo '<b>Using var_dump:</b><br/>';
+                            var_dump($arr);
+                            echo '<br/>';
+
+                            // Using print_r to display the array structure
+                            echo '<b>Using print_r:</b><br/>';
+                            print_r($arr);
+                            echo '<br/>';
+
+                            // Displaying the array using foreach
                             $keys = array_keys($arr);
                             echo '<b>The foreach loop</b><br/>';
                             foreach ($arr as $key => $value) {
-                                echo "$key=>$value<br/>";
+                                echo "$key => $value<br/>";
                             }
 
                             echo '<br/><b>The for loop</b><br/>';
+                            // Displaying the array using for loop
                             for ($i = 0; $i < count($keys); $i++) {
                                 echo "$keys[$i] => " . $arr[$keys[$i]] . '<br/>';
                             }
-                            ?></p>
+                            ?>
+                        </p>
                         <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                             More</a>
                     </div>

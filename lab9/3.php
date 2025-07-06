@@ -101,12 +101,42 @@
                         <p class="animate__animated animate__fadeInUp">
                             <?php
                             $a = array(324, 355, 564, 2, 3, 4, array(4543, 45, 45, 34, 32, 4), 3244, 65, 23);
+
+                            // Using var_dump to display the array structure
+                            echo '<b>Using var_dump:</b><br/>';
+                            var_dump($a);
+                            echo '<br/>';
+
+                            // Using print_r to display the array structure
+                            echo '<b>Using print_r:</b><br/>';
+                            print_r($a);
+                            echo '<br/>';
+
+                            // Displaying the array using foreach
+                            echo '<b>The foreach loop:</b><br/>';
                             foreach ($a as $key => $value) {
-                                if (is_array($value)) foreach ($value as $k => $v) echo "$v <br/>";
-                                else echo "$value<br/>";
+                                if (is_array($value)) {
+                                    foreach ($value as $k => $v) {
+                                        echo "$v <br/>";
+                                    }
+                                } else {
+                                    echo "$value<br/>";
+                                }
                             }
 
-                            ?></p>
+                            echo '<br/><b>The for loop:</b><br/>';
+                            // Displaying the array using for loop
+                            for ($i = 0; $i < count($a); $i++) {
+                                if (is_array($a[$i])) {
+                                    for ($j = 0; $j < count($a[$i]); $j++) {
+                                        echo $a[$i][$j] . '<br/>';
+                                    }
+                                } else {
+                                    echo $a[$i] . '<br/>';
+                                }
+                            }
+                            ?>
+                        </p>
                         <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                             More</a>
                     </div>

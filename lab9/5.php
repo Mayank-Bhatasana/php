@@ -96,17 +96,60 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Create numeric array and print it.</h2>
+                        <h2 class="animate__animated animate__fadeInDown">Create a PHP script that performs the
+                            following tasks using array functions on an associative array
+                            of student score</h2>
                         <p class="animate__animated animate__fadeInUp">
                             <?php
-                            $arr = array(34, 46, 675, 23, 4);
-                            var_dump($arr);
-                            print_r($arr);
+                            $students = [
+                                "Alice" => 85,
+                                "Bob" => 78,
+                                "Charlie" => 92,
+                                "David" => 67,
+                                "Eve" => 90
+                            ];
+                            echo 'Total number of students are.  ';
+                            echo count($students);
 
-                            foreach ($arr as $value) {
-                                print_r($value);
-                                echo "\n";
-                            }
+                            echo '<br/> Print all student names and all scores separately.';
+                            print_r(array_values($students));
+
+                            echo '<br/>';
+                            print_r(array_keys($students));
+
+                            echo '<br/><br/>Calculate and display the total and product of all scores.';
+                            echo '<br/>' . array_product($students) . '<br/>' . array_sum($students);
+
+
+                            echo "<br/><br/><br/>Find the lowest and highest score in the list.";
+                            echo '<br/> Max= ' . max($students) . ' Min=' . min($students);
+
+                            echo "<br/><br/><br/>Check if any student has a score of 90.";
+                            $vales = array_values($students);
+                            $flag = 0;
+                            foreach ($vales as $value) if ($value > 90) $flag = 1;
+                            echo $flag ? '<br/>A student has more than 90' : '<br/><br/>any Student does not have more than 90';
+
+
+                            echo '<br/><br/><br/>Find the student who scored 92.';
+                            echo '<br/>' . array_search(92, $students);
+
+                            echo '<br/><br/>Sort the scores in ascending<br/>';
+                            asort($students);
+                            print_r($students);
+
+                            echo '<br/>and descending order.<br/>';
+                            arsort($students);
+                            print_r($students);
+
+                            echo '<br/><br/><br/>Sort the student names in alphabetical and reverse alphabetical order.<br/>';
+                            ksort($students);
+                            print_r($students);
+
+                            echo '<br/>and descending order.<br/>';
+                            krsort($students);
+                            print_r($students);
+
                             ?></p>
                         <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                             More</a>

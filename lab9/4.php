@@ -96,17 +96,30 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Create numeric array and print it.</h2>
+                        <h2 class="animate__animated animate__fadeInDown">Create a PHP script that performs the
+                            following tasks using array functions on a numeric array of
+                            student scores</h2>
                         <p class="animate__animated animate__fadeInUp">
                             <?php
-                            $arr = array(34, 46, 675, 23, 4);
-                            var_dump($arr);
-                            print_r($arr);
+                            $scores = [85, 78, 92, 67, 90];
+                            echo 'Shuffle score is: -';
+                            print_r($scores);
 
-                            foreach ($arr as $value) {
-                                print_r($value);
-                                echo "\n";
-                            }
+                            echo '<br/>Add a new score to the end of the list.';
+                            array_push($scores, 43);
+                            print_r($scores);
+
+                            echo '<br/>Remove the last score.';
+                            array_pop($scores);
+                            print_r($scores);
+
+                            echo '<br/>Remove the first score.';
+                            array_shift($scores);
+                            print_r($scores);
+
+                            echo '<br/>Add a new score to the beginning of the list.';
+                            array_unshift($scores, 420);
+                            print_r($scores);
                             ?></p>
                         <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                             More</a>
