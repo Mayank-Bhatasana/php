@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    html{
+      background: url('./background.jpg') no-repeat center center fixed;
+      background-size: 100% 100%;
+    }
+
+    .con{
+     display:flex;
+     flex-direction: column;
+     flex:1;
+     width:50%;
+     margin-top: 30px;
+     background: rgba(0,0,0,0.2);
+    }
+
+    .regTag{
+      display: flex;
+      flex-direction:row;
+      flex:1;
+      justify-content: center;
+    }
+
+    .scnCon{
+      display: flex;
+      justify-content: center;
+      gap:4rem;
+      padding-bottom: 40px;
+    }
+
+    .scnCo2{
+     display: flex;
+     width:83%; 
+    }
+
+    .inAr{
+      background: rgba(0,0,0,0.3);
+    }
+    </style> 
+  </head>
+  <body>
+    <div class="con">
+      <h1 class="regTag" >REGISTRATION FORM</h1>
+
+      <div class="scnCon">
+        <input type="text" class="inAr" name="fname" placeholder="First Name">
+        <input type="text" class="inar" name="Lanme" placeholder="Last Name"> 
+      </div>
+
+      <div class="scnCon">
+        <input type="email" name="email" class="scnCo2 inAr" placeholder="Email"> 
+      </div>
+    </div>
+  </body>
+</html>
