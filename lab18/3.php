@@ -28,7 +28,7 @@
 </head>
 <body>
 <form action="" method="post" enctype="multipart/form-data">
-    <input type="file" name="testFile" id="testFile">
+    <input type="file" name="testFile" id="testFile">x
     <input type="submit" value="submit">
 </form>
 <img src="<?php echo $filePath ?>" alt="uploaded file" style="width: 100px; height: 100px;" />
